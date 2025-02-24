@@ -1,6 +1,8 @@
 wandb/
 venv/
 .idea/
+evaluation/
+!.gitkeep
 output/*
 !.gitkeep
 .vscode/
