@@ -31,7 +31,7 @@ The core methodology of this project is based on the work of:
 ```
 
 ### Documentation
-More details about the project can be found [here](https://kingflow-23.github.io/SONIC-GAN/blog_post)
+More details about the project can be found [here](https://kingflow-23.github.io/SONIC-GAN/blog_post_part_1)
 
 ## Installation
 
