@@ -5,8 +5,8 @@
 - [2. Installation](#installation)
 - [3. Usage](#usage)
   - [i. Training](#training)
-  - [ii. Evaluation](#evaluation)
-- [4. Results](#results)
+  - [ii. Evaluation by Reinforcement Learning on Unity](#evaluation-by-reinforcement-learning-on-unity)
+- [4. Results Demo](#results-demo)
 - [5. Authors](#authors)
 
 
@@ -199,9 +199,9 @@ Make sure you define the path to a pretrained TOAD-GAN and the correct input par
 $ python generate_samples.py  --out_ path/to/pretrained/TOAD-GAN --input-dir input --input-name lvl_1-1.txt --num_layer 3 --alpha 100 --niter 4000 --nfc 64
 ```
 
-## Evaluation
+## Evaluation by Reinforcement Learning on Unity 
 
-## Results
+## Results Demo
 
 ## Authors
 
