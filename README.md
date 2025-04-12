@@ -211,7 +211,9 @@ Although we were unable to get the AI to fully complete even a simple level (pri
 
 You will be able to find all the models developed (even if not quite sucessful) and the associated dashboard describing the characteristic of the AI and how the AI see the level itelf.
 
-🗂️ The code for the 2D level auto-encoder is hosted in a separate repository. check it out here: [here](https://github.com/vsx23733/level-auto-encoder)
+The code for the 2D level auto-encoder is hosted in a separate repository. check it out here: [here](https://github.com/vsx23733/level-auto-encoder)
+
+And of course the Unity part of the project can be found right here: [Unity-SonicCraft](https://github.com/vsx23733/SONIC-CRAFT-UNITY)
 
 
 ## Results
