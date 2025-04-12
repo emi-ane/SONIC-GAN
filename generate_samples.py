@@ -23,13 +23,23 @@ from games.mariokart.special_mariokart_downsampling import (
 )
 from games.mariokart.level_image_gen import LevelImageGen as MariokartLevelGen
 from games.sonic.level_image_gen import LevelImageGen as SonicLevelGen
+from games.sonic_commercial.level_image_gen import LevelImageGen as SonicCommercialLevelGen
+
 from games.mario.tokens import REPLACE_TOKENS as MARIO_REPLACE_TOKENS
 from games.mariokart.tokens import REPLACE_TOKENS as MARIOKART_REPLACE_TOKENS
+from games.sonic.tokens import REPLACE_TOKENS as SONIC_REPLACE_TOKENS
+from games.sonic_commercial.tokens import REPLACE_TOKENS as SONIC_COMMERCIAL_REPLACE_TOKENS
+
 from games.mario.tokens import TOKEN_GROUPS as MARIO_TOKEN_GROUPS
 from games.sonic.tokens import TOKENS_GROUPS as SONIC_TOKEN_GROUPS
 from games.mariokart.tokens import TOKEN_GROUPS as MARIOKART_TOKEN_GROUPS
+from games.sonic_commercial.tokens import TOKENS_GROUPS as SONIC_COMMERCIAL_TOKEN_GROUPS
+
+
 from games.mario.special_mario_downsampling import special_mario_downsampling
 from games.sonic.special_sonic_downsampling import special_sonic_downsampling
+from games.sonic_commercial.special_sonic_commercial_downsampling import special_sonic_commercial_downsampling
+
 from generate_noise import generate_spatial_noise
 from models import load_trained_pyramid
 
@@ -88,6 +98,8 @@ def generate_samples(
         token_groups = MARIOKART_TOKEN_GROUPS
     elif opt.game == "sonic":
         token_groups = SONIC_TOKEN_GROUPS
+    elif opt.game == "sonic_commercial":
+        token_groups = SONIC_COMMERCIAL_TOKEN_GROUPS
     else:
         token_groups = []
         NameError("name of --game not recognized. Supported: mario, mariokart, sonic")
@@ -245,7 +257,8 @@ def generate_samples(
 
                 # Save level txt
                 with open(
-                    "%s/txt/%d_sc%d.txt" % (dir2save, n, current_scale), "w"
+                    "%s/txt/%d_sc%d.txt" % (dir2save, n, current_scale), "w",
+                    encoding="utf-8"
                 ) as f:
                     f.writelines(level)
 
@@ -525,8 +538,13 @@ if __name__ == "__main__":
 
         elif opt.game == "sonic":
             opt.ImgGen = SonicLevelGen(sprite_path)
-            replace_tokens = MARIOKART_REPLACE_TOKENS
+            replace_tokens = SONIC_REPLACE_TOKENS
             downsample = special_sonic_downsampling
+        
+        elif opt.game == "sonic_commercial":
+            opt.ImgGen = SonicCommercialLevelGen(sprite_path)
+            replace_tokens = SONIC_COMMERCIAL_REPLACE_TOKENS
+            downsample = special_sonic_commercial_downsampling
 
         else:
             NameError(

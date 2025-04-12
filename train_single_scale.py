@@ -19,6 +19,9 @@ from games.mario.level_utils import (
 )
 from games.mario.tokens import TOKEN_GROUPS as MARIO_TOKEN_GROUPS
 from games.mariokart.tokens import TOKEN_GROUPS as MARIOKART_TOKEN_GROUPS
+from games.sonic.tokens import TOKENS_GROUPS as SONIC_TOKEN_GROUPS
+from games.sonic_commercial.tokens import TOKENS_GROUPS as SONIC_COMMERCIAL_TOKEN_GROUPS
+
 from models import calc_gradient_penalty, save_networks
 
 
@@ -71,6 +74,10 @@ def train_single_scale(
 
     if opt.game == "mario":
         token_group = MARIO_TOKEN_GROUPS
+    elif opt.game == "sonic":
+        token_group = SONIC_TOKEN_GROUPS
+    elif opt.game == "sonic_commercial":
+        token_group = SONIC_COMMERCIAL_TOKEN_GROUPS
     else:  # if opt.game == 'mariokart':
         token_group = MARIOKART_TOKEN_GROUPS
 
@@ -315,7 +322,7 @@ def train_single_scale(
             )
 
             real_scaled_path = os.path.join(wandb.run.dir, f"real@{current_scale}.txt")
-            with open(real_scaled_path, "w") as f:
+            with open(real_scaled_path, "w", encoding="utf-8") as f:
                 f.writelines(real_scaled)
             wandb.save(real_scaled_path)
 

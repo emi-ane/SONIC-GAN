@@ -64,7 +64,7 @@ def load_level_from_text(path_to_level_txt, replace_tokens=REPLACE_TOKENS):
     Returns:
         list: A list of strings representing the level in ASCII.
     """
-    with open(path_to_level_txt, "r") as f:
+    with open(path_to_level_txt, "r", encoding="utf-8") as f:
         ascii_level = []
         for line in f:
             for token, replacement in replace_tokens.items():
