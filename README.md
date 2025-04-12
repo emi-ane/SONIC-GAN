@@ -216,6 +216,22 @@ You will be able to find all the models developed (even if not quite sucessful) 
 
 ## Results
 
+In the AI folder, you can find the different version of the AI trained in the onnx format so it's easy for you to exploit tehm if you want.
+Here are the results as evolution in the time of the hyperparameters of the last AI trained 
+
+Beta Parameter:
+![Beta Parameter](AIs/v6/beta.png)
+
+Learning Rate:
+![Learning Rate](AIs/v6/LR.png)
+
+Entropy:
+![Entropy](AIs/v6/entropy.png)
+
+Epsilon:
+![Epsilon](AIs/v6/epsilon.png)
+
+
 ## Authors
 
 This project is developed by [Aivancity](https://www.aivancity.ai/?utm_term=aivancity&utm_campaign=Acquisition+%5BSF,+Search,+FR%5D&utm_source=adwords&utm_medium=ppc&hsa_acc=4115683429&hsa_cam=16679639181&hsa_grp=135347317816&hsa_ad=695767871507&hsa_src=g&hsa_tgt=kwd-1074062695173&hsa_kw=aivancity&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK_OyiZbkRQ6wy9TjJ-WIyVrhvQUkaAPNKpG3hlbuYktgNwONTSmeToaAq2VEALw_wcB) 3rd year students (see below) in collaboration with [ISART Digital](https://www.isart.fr/?utm_source=google&utm_medium=cpc&utm_campaign=datashake%20-%20Search%20-%20Marque&utm_term=isart%20digital&hsa_acc=4905923708&hsa_cam=11636978144&hsa_grp=146613250209&hsa_ad=636937715424&hsa_src=g&hsa_tgt=kwd-1000928741934&hsa_kw=isart%20digital&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK-e6QnV7auBhkLWBcnB59CPKfb0ZWwGC7LRSxpgaXPQRuYSwnw1TUMaAsDuEALw_wcB):
