@@ -218,6 +218,29 @@ And of course the Unity part of the project can be found right here: [Unity-Soni
 
 ## Results
 
+Considering the original input level: 
+
+![Sonic1_MD_Map_Ghz1](https://github.com/user-attachments/assets/b9bb7702-b884-4258-b444-1adc800a4e74)
+
+
+Based on the input game level in ascii:
+
+![image](https://github.com/user-attachments/assets/5503f26b-c9c7-411a-aa2b-9a037f1c3812)
+
+
+Decoding this image we have (Another feature of GenSonic):
+![image (1)](https://github.com/user-attachments/assets/f062e5e6-096b-4da2-ba89-a6033dd00795)
+
+We have those level generated in ASCII
+
+![image](https://github.com/user-attachments/assets/454f03e0-8ff0-43c8-a9fc-8b9205f6d543)
+
+
+![image](https://github.com/user-attachments/assets/de1ee6bd-e845-4772-900c-85c443a669a8)
+
+
+![image](https://github.com/user-attachments/assets/7c01be0a-a74a-4344-8b45-c7562227b8c5)
+
 In the AI folder, you can find the different version of the AI trained in the onnx format so it's easy for you to exploit tehm if you want.
 Here are the results as evolution in the time of the hyperparameters of the last AI trained 
 
